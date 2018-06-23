@@ -1,1 +1,0 @@
-object Hi { def main(args: Array[String]) = println("Add some OWL2SPARQL code here") }
