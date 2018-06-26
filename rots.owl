@@ -1,187 +1,258 @@
-Prefix(:=<http://www.semanticweb.org/markmiller/ontologies/2018/5/untitled-ontology-585#>)
-Prefix(obo:=<http://purl.obolibrary.org/obo/>)
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-
-
-Ontology(<http://www.semanticweb.org/markmiller/ontologies/2018/5/untitled-ontology-585>
-Annotation(rdfs:comment "0"^^xsd:integer)
-
-Declaration(Class(obo:CHEBI_30618))
-Declaration(Class(obo:CHEBI_32234))
-Declaration(Class(obo:CHEBI_9679))
-Declaration(Class(obo:DRON_00000022))
-Declaration(Class(obo:DRON_00000028))
-Declaration(Class(obo:DRON_00000029))
-Declaration(Class(obo:DRON_00013302))
-Declaration(Class(obo:DRON_00018679))
-Declaration(Class(obo:DRON_00019907))
-Declaration(Class(obo:DRON_00027869))
-Declaration(Class(obo:DRON_00059149))
-Declaration(Class(obo:DRON_00081385))
-Declaration(Class(obo:DRON_00723485))
-Declaration(Class(obo:DRON_00723505))
-Declaration(Class(obo:OBI_0000576))
-Declaration(Class(obo:PATO_0000125))
-Declaration(Class(obo:UO_0000002))
-Declaration(ObjectProperty(obo:BFO_0000053))
-Declaration(ObjectProperty(obo:BFO_0000071))
-Declaration(ObjectProperty(obo:IAO_0000039))
-Declaration(ObjectProperty(<http://www.obofoundry.org/ro/ro.owl#has_proper_part>))
-Declaration(DataProperty(obo:OBI_0001937))
-Declaration(NamedIndividual(obo:UO_0000022))
-Declaration(AnnotationProperty(obo:DRON_00010000))
-############################
-#   Annotation Properties
-############################
-
-# Annotation Property: obo:DRON_00010000 (has_RxCUI)
-
-AnnotationAssertion(rdfs:label obo:DRON_00010000 "has_RxCUI")
-
-
-############################
-#   Object Properties
-############################
-
-# Object Property: obo:BFO_0000053 (is_bearer_of)
-
-AnnotationAssertion(rdfs:label obo:BFO_0000053 "is bearer of"@en)
-AnnotationAssertion(rdfs:label obo:BFO_0000053 "is_bearer_of"^^xsd:string)
-
-# Object Property: obo:BFO_0000071 (has granular part)
-
-AnnotationAssertion(rdfs:label obo:BFO_0000071 "has granular part"@en)
-
-# Object Property: obo:IAO_0000039 (has measurement unit label)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000039 "has measurement unit label"@en)
-
-# Object Property: <http://www.obofoundry.org/ro/ro.owl#has_proper_part> (has_proper_part)
-
-AnnotationAssertion(rdfs:label <http://www.obofoundry.org/ro/ro.owl#has_proper_part> "has_proper_part"@en)
-AnnotationAssertion(rdfs:label <http://www.obofoundry.org/ro/ro.owl#has_proper_part> "has_proper_part"^^xsd:string)
-TransitiveObjectProperty(<http://www.obofoundry.org/ro/ro.owl#has_proper_part>)
-
-
-############################
-#   Data Properties
-############################
-
-# Data Property: obo:OBI_0001937 (has specified value)
-
-AnnotationAssertion(rdfs:label obo:OBI_0001937 "has specified value")
+Prefix: : <http://www.semanticweb.org/markmiller/ontologies/2018/5/untitled-ontology-585#>
+Prefix: obo: <http://purl.obolibrary.org/obo/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 
-############################
-#   Classes
-############################
-
-# Class: obo:CHEBI_30618 (hypromellose)
-
-AnnotationAssertion(rdfs:label obo:CHEBI_30618 "hydroxypropyl methylcellulose"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:CHEBI_30618 "hypromellose"^^xsd:string)
-SubClassOf(obo:CHEBI_30618 obo:DRON_00000029)
-
-# Class: obo:CHEBI_32234 (titanium dioxide)
-
-AnnotationAssertion(rdfs:label obo:CHEBI_32234 "titanium dioxide"^^xsd:string)
-SubClassOf(obo:CHEBI_32234 obo:DRON_00000029)
-
-# Class: obo:CHEBI_9679 (tricalcium phosphate)
-
-AnnotationAssertion(rdfs:label obo:CHEBI_9679 "tricalcium bis(phosphate)"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:CHEBI_9679 "tricalcium phosphate"^^xsd:string)
-SubClassOf(obo:CHEBI_9679 obo:DRON_00000029)
-
-# Class: obo:DRON_00000022 (drug tablet)
-
-AnnotationAssertion(rdfs:label obo:DRON_00000022 "drug tablet"@en)
-
-# Class: obo:DRON_00000028 (active ingredient)
-
-AnnotationAssertion(rdfs:label obo:DRON_00000028 "active ingredient"@en)
-
-# Class: obo:DRON_00000029 (excipient)
-
-AnnotationAssertion(rdfs:label obo:DRON_00000029 "excipient"@en)
-
-# Class: obo:DRON_00013302 (Triacetin)
-
-AnnotationAssertion(rdfs:label obo:DRON_00013302 "Triacetin"^^xsd:string)
-SubClassOf(obo:DRON_00013302 obo:DRON_00000029)
-
-# Class: obo:DRON_00018679 (rosuvastatin)
-
-AnnotationAssertion(rdfs:label obo:DRON_00018679 "rosuvastatin"^^xsd:string)
-
-# Class: obo:DRON_00019907 (microcrystalline cellulose)
-
-AnnotationAssertion(rdfs:label obo:DRON_00019907 "microcrystalline cellulose"^^xsd:string)
-SubClassOf(obo:DRON_00019907 obo:DRON_00000029)
-
-# Class: obo:DRON_00027869 (rosuvastatin Oral Tablet)
-
-AnnotationAssertion(obo:DRON_00010000 obo:DRON_00027869 "402354"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:DRON_00027869 "rosuvastatin Oral Tablet"^^xsd:string)
-SubClassOf(obo:DRON_00027869 obo:DRON_00000022)
-SubClassOf(obo:DRON_00027869 ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_proper_part> ObjectIntersectionOf(obo:OBI_0000576 ObjectSomeValuesFrom(obo:BFO_0000053 obo:DRON_00000028) ObjectSomeValuesFrom(obo:BFO_0000071 obo:DRON_00018679))))
-
-# Class: obo:DRON_00059149 (Rosuvastatin calcium 40 MG Oral Tablet)
-
-AnnotationAssertion(obo:DRON_00010000 obo:DRON_00059149 "859419"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:DRON_00059149 "Rosuvastatin calcium 40 MG Oral Tablet"^^xsd:string)
-SubClassOf(obo:DRON_00059149 obo:DRON_00027869)
-SubClassOf(obo:DRON_00059149 ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_proper_part> ObjectIntersectionOf(obo:OBI_0000576 ObjectSomeValuesFrom(obo:BFO_0000053 obo:DRON_00000028) ObjectSomeValuesFrom(obo:BFO_0000053 ObjectIntersectionOf(obo:PATO_0000125 ObjectHasValue(obo:IAO_0000039 obo:UO_0000022) DataHasValue(obo:OBI_0001937 "40.0"^^xsd:double))) ObjectSomeValuesFrom(obo:BFO_0000071 obo:DRON_00018679))))
-
-# Class: obo:DRON_00081385 (Rosuvastatin calcium 40 MG Oral Tablet [Crestor])
-
-AnnotationAssertion(obo:DRON_00010000 obo:DRON_00081385 "859421"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:DRON_00081385 "Rosuvastatin calcium 40 MG Oral Tablet [Crestor]"^^xsd:string)
-SubClassOf(obo:DRON_00081385 obo:DRON_00059149)
-SubClassOf(obo:DRON_00081385 ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_proper_part> ObjectIntersectionOf(obo:OBI_0000576 ObjectSomeValuesFrom(obo:BFO_0000053 obo:DRON_00000029) ObjectSomeValuesFrom(obo:BFO_0000071 obo:CHEBI_30618))))
-SubClassOf(obo:DRON_00081385 ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_proper_part> ObjectIntersectionOf(obo:OBI_0000576 ObjectSomeValuesFrom(obo:BFO_0000053 obo:DRON_00000029) ObjectSomeValuesFrom(obo:BFO_0000071 obo:CHEBI_32234))))
-SubClassOf(obo:DRON_00081385 ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_proper_part> ObjectIntersectionOf(obo:OBI_0000576 ObjectSomeValuesFrom(obo:BFO_0000053 obo:DRON_00000029) ObjectSomeValuesFrom(obo:BFO_0000071 obo:CHEBI_9679))))
-SubClassOf(obo:DRON_00081385 ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_proper_part> ObjectIntersectionOf(obo:OBI_0000576 ObjectSomeValuesFrom(obo:BFO_0000053 obo:DRON_00000029) ObjectSomeValuesFrom(obo:BFO_0000071 obo:DRON_00013302))))
-SubClassOf(obo:DRON_00081385 ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_proper_part> ObjectIntersectionOf(obo:OBI_0000576 ObjectSomeValuesFrom(obo:BFO_0000053 obo:DRON_00000029) ObjectSomeValuesFrom(obo:BFO_0000071 obo:DRON_00019907))))
-SubClassOf(obo:DRON_00081385 ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_proper_part> ObjectIntersectionOf(obo:OBI_0000576 ObjectSomeValuesFrom(obo:BFO_0000053 obo:DRON_00000029) ObjectSomeValuesFrom(obo:BFO_0000071 obo:DRON_00723485))))
-SubClassOf(obo:DRON_00081385 ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_proper_part> ObjectIntersectionOf(obo:OBI_0000576 ObjectSomeValuesFrom(obo:BFO_0000053 obo:DRON_00000029) ObjectSomeValuesFrom(obo:BFO_0000071 obo:DRON_00723505))))
-
-# Class: obo:DRON_00723485 (ferric oxide)
-
-AnnotationAssertion(rdfs:label obo:DRON_00723485 "ferric oxide"^^xsd:string)
-SubClassOf(obo:DRON_00723485 obo:DRON_00000029)
-
-# Class: obo:DRON_00723505 (Crospovidone)
-
-AnnotationAssertion(rdfs:label obo:DRON_00723505 "Crospovidone"^^xsd:string)
-SubClassOf(obo:DRON_00723505 obo:DRON_00000029)
-
-# Class: obo:OBI_0000576 (scattered molecular aggregate)
-
-AnnotationAssertion(rdfs:label obo:OBI_0000576 "scattered molecular aggregate"@en)
-
-# Class: obo:PATO_0000125 (mass)
-
-AnnotationAssertion(rdfs:label obo:PATO_0000125 "mass"^^xsd:string)
-
-# Class: obo:UO_0000002 (mass unit)
-
-AnnotationAssertion(rdfs:label obo:UO_0000002 "mass unit")
+Ontology: <http://www.semanticweb.org/markmiller/ontologies/2018/5/untitled-ontology-585>
 
 
-############################
-#   Named Individuals
-############################
+Annotations: 
+    rdfs:comment 0
 
-# Individual: obo:UO_0000022 (milligram)
+AnnotationProperty: obo:DRON_00010000
 
-AnnotationAssertion(rdfs:label obo:UO_0000022 "milligram"^^xsd:string)
-ClassAssertion(obo:UO_0000002 obo:UO_0000022)
+    Annotations: 
+        rdfs:label "has_RxCUI"
+    
+    
+AnnotationProperty: rdfs:comment
 
+    
+AnnotationProperty: rdfs:label
 
-)
+    
+Datatype: rdf:PlainLiteral
+
+    
+Datatype: xsd:double
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: <http://www.obofoundry.org/ro/ro.owl#has_proper_part>
+
+    Annotations: 
+        rdfs:label "has_proper_part"@en,
+        rdfs:label "has_proper_part"^^xsd:string
+    
+    Characteristics: 
+        Transitive
+    
+    
+ObjectProperty: obo:BFO_0000053
+
+    Annotations: 
+        rdfs:label "is_bearer_of"^^xsd:string,
+        rdfs:label "is bearer of"@en
+    
+    
+ObjectProperty: obo:BFO_0000071
+
+    Annotations: 
+        rdfs:label "has granular part"@en
+    
+    
+ObjectProperty: obo:IAO_0000039
+
+    Annotations: 
+        rdfs:label "has measurement unit label"@en
+    
+    
+DataProperty: obo:OBI_0001937
+
+    Annotations: 
+        rdfs:label "has specified value"
+    
+    
+Class: obo:CHEBI_30618
+
+    Annotations: 
+        rdfs:label "hypromellose"^^xsd:string,
+        rdfs:label "hydroxypropyl methylcellulose"^^xsd:string
+    
+    SubClassOf: 
+        obo:DRON_00000029
+    
+    
+Class: obo:CHEBI_32234
+
+    Annotations: 
+        rdfs:label "titanium dioxide"^^xsd:string
+    
+    SubClassOf: 
+        obo:DRON_00000029
+    
+    
+Class: obo:CHEBI_9679
+
+    Annotations: 
+        rdfs:label "tricalcium phosphate"^^xsd:string,
+        rdfs:label "tricalcium bis(phosphate)"^^xsd:string
+    
+    SubClassOf: 
+        obo:DRON_00000029
+    
+    
+Class: obo:DRON_00000022
+
+    Annotations: 
+        rdfs:label "drug tablet"@en
+    
+    
+Class: obo:DRON_00000028
+
+    Annotations: 
+        rdfs:label "active ingredient"@en
+    
+    
+Class: obo:DRON_00000029
+
+    Annotations: 
+        rdfs:label "excipient"@en
+    
+    
+Class: obo:DRON_00013302
+
+    Annotations: 
+        rdfs:label "Triacetin"^^xsd:string
+    
+    SubClassOf: 
+        obo:DRON_00000029
+    
+    
+Class: obo:DRON_00018679
+
+    Annotations: 
+        rdfs:label "rosuvastatin"^^xsd:string
+    
+    
+Class: obo:DRON_00019907
+
+    Annotations: 
+        rdfs:label "microcrystalline cellulose"^^xsd:string
+    
+    SubClassOf: 
+        obo:DRON_00000029
+    
+    
+Class: obo:DRON_00027869
+
+    Annotations: 
+        rdfs:label "rosuvastatin Oral Tablet"^^xsd:string,
+        obo:DRON_00010000 "402354"^^xsd:string
+    
+    SubClassOf: 
+        obo:DRON_00000022,
+        <http://www.obofoundry.org/ro/ro.owl#has_proper_part> some 
+            (obo:OBI_0000576
+             and (obo:BFO_0000053 some obo:DRON_00000028)
+             and (obo:BFO_0000071 some obo:DRON_00018679))
+    
+    
+Class: obo:DRON_00059149
+
+    Annotations: 
+        rdfs:label "Rosuvastatin calcium 40 MG Oral Tablet"^^xsd:string,
+        obo:DRON_00010000 "859419"^^xsd:string
+    
+    SubClassOf: 
+        obo:DRON_00027869,
+        <http://www.obofoundry.org/ro/ro.owl#has_proper_part> some 
+            (obo:OBI_0000576
+             and (obo:BFO_0000053 some obo:DRON_00000028)
+             and (obo:BFO_0000053 some 
+                (obo:PATO_0000125
+                 and (obo:IAO_0000039 value obo:UO_0000022)
+                 and (obo:OBI_0001937 value "40.0"^^xsd:double)))
+             and (obo:BFO_0000071 some obo:DRON_00018679))
+    
+    
+Class: obo:DRON_00081385
+
+    Annotations: 
+        rdfs:label "Rosuvastatin calcium 40 MG Oral Tablet [Crestor]"^^xsd:string,
+        obo:DRON_00010000 "859421"^^xsd:string
+    
+    SubClassOf: 
+        obo:DRON_00059149,
+        <http://www.obofoundry.org/ro/ro.owl#has_proper_part> some 
+            (obo:OBI_0000576
+             and (obo:BFO_0000053 some obo:DRON_00000029)
+             and (obo:BFO_0000071 some obo:CHEBI_30618)),
+        <http://www.obofoundry.org/ro/ro.owl#has_proper_part> some 
+            (obo:OBI_0000576
+             and (obo:BFO_0000053 some obo:DRON_00000029)
+             and (obo:BFO_0000071 some obo:CHEBI_32234)),
+        <http://www.obofoundry.org/ro/ro.owl#has_proper_part> some 
+            (obo:OBI_0000576
+             and (obo:BFO_0000053 some obo:DRON_00000029)
+             and (obo:BFO_0000071 some obo:CHEBI_9679)),
+        <http://www.obofoundry.org/ro/ro.owl#has_proper_part> some 
+            (obo:OBI_0000576
+             and (obo:BFO_0000053 some obo:DRON_00000029)
+             and (obo:BFO_0000071 some obo:DRON_00013302)),
+        <http://www.obofoundry.org/ro/ro.owl#has_proper_part> some 
+            (obo:OBI_0000576
+             and (obo:BFO_0000053 some obo:DRON_00000029)
+             and (obo:BFO_0000071 some obo:DRON_00019907)),
+        <http://www.obofoundry.org/ro/ro.owl#has_proper_part> some 
+            (obo:OBI_0000576
+             and (obo:BFO_0000053 some obo:DRON_00000029)
+             and (obo:BFO_0000071 some obo:DRON_00723485)),
+        <http://www.obofoundry.org/ro/ro.owl#has_proper_part> some 
+            (obo:OBI_0000576
+             and (obo:BFO_0000053 some obo:DRON_00000029)
+             and (obo:BFO_0000071 some obo:DRON_00723505))
+    
+    
+Class: obo:DRON_00723485
+
+    Annotations: 
+        rdfs:label "ferric oxide"^^xsd:string
+    
+    SubClassOf: 
+        obo:DRON_00000029
+    
+    
+Class: obo:DRON_00723505
+
+    Annotations: 
+        rdfs:label "Crospovidone"^^xsd:string
+    
+    SubClassOf: 
+        obo:DRON_00000029
+    
+    
+Class: obo:OBI_0000576
+
+    Annotations: 
+        rdfs:label "scattered molecular aggregate"@en
+    
+    
+Class: obo:PATO_0000125
+
+    Annotations: 
+        rdfs:label "mass"^^xsd:string
+    
+    
+Class: obo:UO_0000002
+
+    Annotations: 
+        rdfs:label "mass unit"
+    
+    
+Individual: obo:UO_0000022
+
+    Annotations: 
+        rdfs:label "milligram"^^xsd:string
+    
+    Types: 
+        obo:UO_0000002
+    
+    
