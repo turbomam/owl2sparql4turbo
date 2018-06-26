@@ -4,7 +4,7 @@
 		module="hello_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20180622170744"
+		publication="20180626144751"
 	>
 		<description>
 		hello
@@ -32,6 +32,8 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.2" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.2" conf="scala-tool->default,optional(default);compile->default(compile)"/>
-		<dependency org="org.aksw.owl2sparql" name="owl2sparql-core" rev="0.1-SNAPSHOT" conf="compile->default(compile)"/>
+		<dependency org="org.aksw.owl2sparql" name="owl2sparql-core" rev="0.2-SNAPSHOT" conf="compile->default(compile)"/>
+		<dependency org="org.apache.commons" name="commons-rdf-api" rev="0.5.0" conf="compile->default(compile)"/>
+		<dependency org="org.scala-lang.modules" name="scala-java8-compat_2.11" rev="0.8.0-RC3" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

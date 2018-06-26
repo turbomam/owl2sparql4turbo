@@ -1,5 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Mark Miller\owl2sparql\HelloWorld.scala:20:33: not enough arguments for method convert: (x$1: org.semanticweb.owlapi.model.OWLClassExpression, x$2: String, x$3: Boolean)String.[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters x$2, x$3.[0m
-[0m[[0m[31merror[0m] [0m[0mvar asSparql = converter.convert(classExp)[0m
-[0m[[0m[31merror[0m] [0m[0m                                ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m

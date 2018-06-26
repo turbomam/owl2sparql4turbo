@@ -6,18 +6,14 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 Ontology: <http://example.com/animals.owl>
 
-AnnotationProperty: rdfs:comment
-    
 ObjectProperty: <http://example.com/eats>
-    
+
 Class: <http://example.com/animal>
-    
+
 Class: <http://example.com/carnivore>
 
-    EquivalentTo: 
-        <http://example.com/eats> some <http://example.com/animal>
-    
     SubClassOf: 
         <http://example.com/animal>
+         and (<http://example.com/eats> some <http://example.com/animal>)
 
-		
+		 
