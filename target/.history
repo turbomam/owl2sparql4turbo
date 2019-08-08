@@ -28,3 +28,9 @@ eclipse
 clean
 reset
 eclipse
+clean
+clean all
+build
+compile
+run
+eclipse
