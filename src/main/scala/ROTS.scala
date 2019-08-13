@@ -7,7 +7,10 @@ import org.semanticweb.owlapi.search.EntitySearcher
 
 object ROTS {
 
-  // SPARQL searches for Rosuvastatin Oral Tablet classes
+  // Original case: SPARQL searches for Rosuvastatin Oral Tablet classes
+  // for HTN elevated blood pressure, need to change proposed subclass query with query for equivalent class assertion
+  // https://stackoverflow.com/questions/7250189/how-to-build-sparql-queries-in-java
+  // https://rdf4j.eclipse.org/documentation/sparqlbuilder/
 
   def main(args: Array[String]): Unit = {
 
@@ -30,10 +33,13 @@ object ROTS {
       println("\n")
 
       var scConverter = new OWLClassExpressionToSPARQLSubClassQueryConverter()
+      //      var scConverter = new org.aksw.owl2sparql.OWLClassExpressionToSPARQLConverter()
+
       var targetVar = "?x"
 
       var queryStr = scConverter.convert(oneSuper, targetVar)
-
+      //      var queryStr = scConverter.convert(oneSuper, targetVar, false)
+      //
       println(queryStr)
       println("\n")
       println("\n")
